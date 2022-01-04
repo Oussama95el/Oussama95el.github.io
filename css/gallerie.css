@@ -1,0 +1,202 @@
+.bg-image-gallerie {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(230, 220, 220, 0.274),
+      #57565621
+    ),
+    url(/Assets/gallerie-bg.jpg);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: top;
+  opacity: 1;
+}
+.title-gallerie {
+  position: absolute;
+  display: block;
+  top: 150px;
+  left: 50%;
+  transform: translate(-45%, -60%);
+  text-align: center;
+}
+.title-gallerie-main {
+  font-size: 6vw;
+  font-weight: 600;
+  letter-spacing: 3px;
+  font-family: "Cabin", sans-serif;
+  color: black;
+  width: 100%;
+  display: inline-block;
+}
+.title-gallerie-sub {
+  font-size: 3vw;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  font-family: "Cabin", sans-serif;
+  color: azure;
+  display: inline-block;
+  width: 100%;
+}
+.second-title {
+  text-transform: uppercase;
+}
+.gallerie-text {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+.gallerie-text-style {
+  font-size: 16px;
+  font-family: "Source sans pro", sans-serif;
+}
+.list-collection {
+  margin: auto;
+  background-image: linear-gradient(to right, #ff5c5c, #7b84e6);
+}
+.menu-vehicule {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: double;
+}
+.menu-vehicule > li {
+  padding: 5px;
+  float: left;
+  position: relative;
+}
+.menu-vehicule > li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Cabin", sans-serif;
+}
+.sub-menu {
+  list-style: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: azure;
+  -webkit-box-shadow: 0 2px 2px rgba(12, 12, 12, 0.5);
+  box-shadow: 0 2px 2px rgba(12, 12, 12, 0.5);
+  display: none;
+}
+.sub-menu > li a {
+  font-size: 14px;
+  text-decoration: none;
+}
+.sub-menu > li a:hover {
+  color: #ff5c5c;
+}
+.sub-menu > li {
+  padding: 10px;
+}
+.sub-menu:before {
+  content: "";
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid azure;
+  height: 0;
+  width: 0px;
+  position: absolute;
+  left: 10px;
+  top: -6px;
+}
+.menu:hover .sub-menu {
+  display: block;
+}
+.gallerie-vehicule {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.gallerie-title {
+  font-size: 33px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  padding: 20px;
+  font-family: "Cabin", sans-serif;
+  text-align: start;
+  margin-left: 45px;
+}
+.gallerie-title:after {
+  content: "";
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  height: 3px;
+  margin-top: 0.3em;
+  background-color: #ff5c5c;
+}
+div.gallery {
+  margin: 5px;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 180px;
+}
+.gallery img {
+  width: 90%;
+  height: 50%;
+}
+div .desc {
+  line-height: 1.2em;
+  font-size: 16px;
+  font-family: "din-2014", sans-serif;
+  margin: 0.5em 0 0.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media (max-width: 650px) {
+  .title-gallerie-sub {
+    font-size: 18px;
+  }
+  .title-gallerie-main {
+    font-size: 36px;
+  }
+}
+@media (max-width: 480px) {
+  .title-gallerie-sub {
+    font-size: 12px;
+  }
+  .title-gallerie-main {
+    font-size: 28px;
+  }
+}
+@media (max-width: 320px) {
+  .gallerie-text {
+    margin-top: 350px;
+    width: 100%;
+    align-items: center;
+  }
+  .gallerie-text p {
+    font-size: 12px;
+  }
+  .gallerie-vehicule {
+    text-align: center;
+  }
+  .menu-vehicule > li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Cabin", sans-serif;
+  }
+  .title-gallerie-sub {
+    font-weight: 300;
+    width: 100%;
+    letter-spacing: 1.5px;
+    font-family: "Cabin", sans-serif;
+    color: azure;
+  }
+  .title-gallerie-main {
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: "Cabin", sans-serif;
+    color: black;
+    width: 100%;
+  }
+}

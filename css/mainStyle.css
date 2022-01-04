@@ -1,0 +1,432 @@
+/*liniear gradiant color : #7b84e6 ,#ff5c5c */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  color: rgb(48, 46, 46);
+  line-height: 1, 75;
+  padding: 25px;
+}
+a {
+  color: #1a1818;
+}
+p {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: start;
+}
+h1 h2 h3 h4 h5 {
+  font-family: "Cabin", sans-serif;
+  text-align: justify;
+  margin: 10px;
+}
+a:hover {
+  color: #fff;
+}
+header .logo {
+  width: 100px;
+  height: 50px;
+  padding-left: 15px;
+  padding-top: 10px;
+}
+#default-nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Cabin", sans-serif;
+  align-content: center;
+  background: linear-gradient(to right, #7b84e6, #ff5c5c);
+  text-align: center;
+  align-items: center;
+  padding-right: 30px;
+  z-index: 1;
+  box-shadow: 3px 3px 6px 0px #ccdbe8 inset,
+    -3px -3px 6px 1px rgba(255, 255, 255, 0.5) inset;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+  padding: 7px 75px 0 0;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  font-family: "Cabin", sans-serif;
+}
+.mobile-nav {
+  display: none;
+}
+.background {
+  position: relative;
+  background-size: cover;
+  background-image: url(/bg.jpg);
+  height: 95vh;
+  object-fit: cover;
+  background-position: top;
+}
+.text-box {
+  position: absolute;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #ff5c5cbe, #7b84e6be);
+
+  top: 50%;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+#head-line {
+  color: #f7f7f7;
+  text-transform: uppercase;
+  text-align: center;
+}
+#main-hl {
+  display: block;
+  font-size: 44px;
+  font-weight: 600;
+}
+#sub-hl {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+}
+footer {
+  bottom: 0em;
+}
+@media (max-width: 320px) {
+  .text-box {
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+  }
+  #head-line {
+    color: #f7f7f7;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  #main-hl {
+    display: block;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  #sub-hl {
+    display: block;
+    font-size: 16px;
+    font-weight: 200;
+  }
+  #hyundai {
+    padding: 0 0 15 0;
+  }
+}
+
+.h2 {
+  justify-content: center;
+  text-align: center;
+  font-family: "Cabin", sans-serif;
+  font-size: 3vw;
+  background-image: linear-gradient(to right, #ff5c5c, #7b84e6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+#card-vehicule {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  padding: 2rem;
+  width: 100%;
+  height: auto;
+}
+#card-vehicule p {
+  font-size: 14px;
+  text-align: start;
+  align-content: center;
+}
+.vehicule {
+  width: 20rem;
+  height: 25rem;
+  padding: 5px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
+}
+.imgVehicule {
+  width: 100%;
+  height: 55%;
+  border-radius: 1rem;
+  object-fit: contain;
+}
+.price {
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  float: right;
+}
+.voirPlus {
+  width: 30%;
+  height: 10%;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: 5px;
+  --c: #ff5c5c;
+  color: var(--c);
+  font-size: 16px;
+  border: 0.3em solid var(--c);
+  border-radius: 0.5em;
+  font-weight: bold;
+  font-family: "Cabin", sans-serif;
+  letter-spacing: 0.5px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+}
+.voirPlus :hover {
+  color: #f7f7f7;
+}
+.footer {
+  width: 100%;
+  height: max-content;
+  background-image: linear-gradient(to right, #ff5c5c, #7b84e6);
+  align-items: center;
+  padding: 5px;
+  flex-wrap: wrap;
+  gap: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 3px 3px 6px 0px #ccdbe8 inset,
+    -3px -3px 6px 1px rgba(255, 255, 255, 0.5) inset;
+}
+.footer p {
+  font-size: 14px;
+  font-family: "Source sans pro", sans-serif;
+  text-align: justify;
+}
+.up {
+  height: fit-content;
+  padding: 8px;
+  border-radius: 2rem;
+  background-color: #ff5c5c;
+  border-style: none;
+}
+.up :hover {
+  color: #f7f7f7;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  color: #1a1818;
+  font-weight: 400;
+}
+@media screen and (max-width: 530px) {
+  .icons {
+    display: flex;
+    flex-direction: column;
+    float: right;
+  }
+  .footer {
+    flex-direction: row;
+  }
+  .header {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 402px) {
+  .icons {
+    display: flex;
+    flex-direction: row;
+  }
+  .slogan {
+    display: none;
+  }
+}
+.marque {
+  justify-content: space-evenly;
+}
+.marque .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  align-content: space-around;
+  gap: 25px;
+  justify-content: center;
+}
+.marque .marqueCard {
+  width: 170px;
+  align-content: space-between;
+}
+#mercedes {
+  width: 150px;
+  height: auto;
+}
+#volvo {
+  width: 150px;
+  height: auto;
+}
+#volkswagone {
+  width: 150px;
+  height: auto;
+}
+#suzuki {
+  width: 150px;
+  height: auto;
+}
+#toyota {
+  width: 150px;
+  height: auto;
+}
+#hyundai {
+  width: 150px;
+  height: auto;
+}
+
+/* Mobile menu navigation */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 5px;
+  }
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .up {
+    display: none;
+  }
+  #default-nav {
+    display: none;
+  }
+
+  #menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .slogan {
+    text-align: center;
+    line-height: 1;
+    padding-top: 15px;
+    letter-spacing: 3px;
+  }
+  .h2 {
+    font-size: 5vw;
+  }
+
+  #menuToggle input {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  #menuToggle span {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #1a1818;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    background: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #7b84e6d5;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  a:hover {
+    color: #ff5c5c;
+  }
+
+  #menu {
+    list-style: none;
+    position: absolute;
+    width: 180px;
+    height: 400px;
+    box-shadow: 0 0 10px #7b84e6d5;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+  nav {
+    background: linear-gradient(to right, #ff5c5c, #7b84e6);
+    height: 65px;
+  }
+
+  #menu li {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
+
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+  .logo-mobile {
+    width: 50px;
+    height: 45px;
+    margin: 10px 5px 0 0;
+  }
+  .auto,
+  .location {
+    display: none;
+  }
+}
+button {
+  font-family: "Cabin", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}

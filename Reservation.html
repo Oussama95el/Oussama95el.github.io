@@ -1,0 +1,147 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/css/reservation.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@100&family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>RENT ME NOW</title>
+    <link rel="stylesheet" href="./css/mainStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <nav role="navigation">
+          <div id="default-nav">
+            <img class="logo" src="./Logo.png" alt="Logo Location Voiture" />
+            <div class="nav-bar-toggle"></div>
+
+            <ul class="nav">
+              <li><a href="./index.html"> Accueil</a></li>
+              <li><a href="./Gallerie.html"> Gallerie</a></li>
+              <li><a href="./Reservation.html"> Reservation</a></li>
+              <li><a href="./Contact.html"> Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="mobile-nav">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./Gallerie.html">Gallerie</a></li>
+                <li><a href="./Reservation.html">Reservation</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="slogan" style="line-height: 0">
+              <h2 class="auto">RENT ME NOW</h2>
+              <h4 class="location">LOCATION DE VEHICULE</h4>
+            </div>
+            <img
+              class="logo-mobile"
+              src="./logo2.png"
+              alt="voiture logo location "
+            />
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="Reservation">
+      <div class="bg-image-reservation"></div>
+      <form action="">
+      <div class="container-reservation">
+        <h1 class="title">Reservation</h1>
+        <div class="first-selection">
+          <h3>Choisir votre type de vehicule</h3>
+          <select name="Vehicule" id="vehicule-type" required>
+            <option value="" style="display: none">- Choisir -</option>
+            <option value="Moto">Moto</option>
+            <option value="Citadine">Citadine</option>
+            <option value="Berline">Berline</option>
+            <option value="Compacte">Compacte</option>
+            <option value="Utilitaire">Utilitaire</option>
+            <option value="Engin-chantier">Engin-chantier</option>
+            <option value="Camion">Camion</option>
+          </select>
+          <h3>Boite Vitesse Disponible</h3>
+          <div id="boite-vitess">
+              <input type="radio" id="manuelle" name="boiteVitess" value="manuelle" disabled> 
+              <label for="manuelle">Manuelle</label> |
+              <label for="automatique">Automatique</label>
+              <input type="radio" id="automatique" name="boiteVitess" value="automatique" disabled>  
+          </div>
+        </div>
+        <div class="second-selection">
+          <h3>choisir le nombre des jours désirer</h3>
+          <div class="input-num">
+          <input type="number" id="jour" name="jours" min="1" class="input-choice" required/>
+          <span>|  jours</span>
+          </div>
+        </div>
+        <div class="third-selection">
+        </div>
+        <input id="btn-confirmer" type="submit" value="confirmer">
+        </div>
+      </form>
+      </div>
+      <div class="form-popup" id="popUp-result">
+        <a href="/Reservation.html" class="close"></a>
+        <div class="first-line-result">
+          <h3> Vehicule type : <h3 id = "result-type"></h3></h3>
+        </div>
+        <div class="seconde-line-result">
+          <h3> Moteur : <h3 id="result-moteur"></h3></h3>
+        </div>
+        <div class="third-line-result">
+          <h3> Prix Total : <h3 id="result-price"></h3> €</h3>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="copyright">
+        <p>©2021 Rent Me Now <b> | </b><a href=""> Confidentielité</a></p>
+      </div>
+      <div class="contact-info">
+        <p>
+          <b><u>Contact us</u></b>
+        </p>
+        <p>Email : RentMeNow@contact.com</p>
+        <p>Telepone : +2126 3430 6060 / +2125 24 61 5050</p>
+      </div>
+      <span>
+        <button class="up" type="button">
+          <a href="#default-nav">Début de page</a>
+        </button>
+      </span>
+      <div class="icons">
+        <a class="fa-icon" href="https://www.instagram.com/" title="">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a class="fa-icon" href="https://pinterest.com/" title="">
+          <i class="fa fa-pinterest"></i>
+        </a>
+        <a class="fa-icon" href="https://twitter.com/" title="">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a class="fa-icon" href="https://facebook.com/" title="">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="/jsFiles/Reservation.js"></script>
+  </body>
+</html>

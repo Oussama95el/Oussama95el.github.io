@@ -1,0 +1,142 @@
+#bgContact {
+  background-image: linear-gradient(to right, #ffff, #0000);
+  width: 100%;
+  height: 100vh;
+  filter: blur(2);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#formulaire {
+  background-color: #7b84e6d5;
+  width: 60%;
+  height: auto;
+  border-radius: 2rem;
+  margin: auto;
+}
+.titre {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px;
+  background-color: #fff2f2;
+  border-radius: 2rem;
+  line-height: 1, 25;
+  justify-content: center;
+  text-align: center;
+}
+.label_form {
+  font-family: "Source sans pro", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
+.titre p {
+  text-align: center;
+  margin: auto;
+  width: 40%;
+  font-size: 2vw;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.submit-form:hover {
+  color: honeydew;
+}
+.container_form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-contact {
+  width: 80%;
+  margin: auto;
+  display: block;
+  padding: 10px;
+}
+.two-in-one-field {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.form .two-in-one-field .input_group {
+  flex-basis: 50%;
+}
+.input_group {
+  margin-bottom: 2rem;
+}
+.input_form {
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 25px;
+  border-radius: 4px;
+  border-style: double;
+  transition: border 0.45s;
+  font-family: inherit;
+  font-weight: 500;
+}
+.input_form .message {
+  height: 500px;
+}
+.form .submit-form {
+  width: 100px;
+  height: 35px;
+}
+.input_group_button {
+  margin-left: 40%;
+}
+@media (max-width: 320px) {
+  .container {
+    flex-direction: column;
+  }
+  #formulaire {
+    background-color: #7b84e6d5;
+    width: 95%;
+    height: auto;
+    border-radius: 2rem;
+    margin: auto;
+  }
+  .form-contact {
+    width: 90%;
+    margin: auto;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+  }
+  .h2 {
+    font-size: 24px;
+    padding: 8px;
+  }
+  .titre p {
+    font-size: 10px;
+    width: 75%;
+    text-align: center;
+  }
+  .two-in-one-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+  .form .two-in-one-field .input_group {
+    flex-basis: 50%;
+  }
+  #bgContact {
+    background-position: center;
+  }
+  .input_group_button {
+    margin-left: 50px;
+  }
+  .voirPlus {
+    width: fit-content;
+    height: max-content;
+    background-color: #ff5c5c;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-align: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,133 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Poppins:wght@100&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet"/>
+    <title>RENT ME NOW</title>
+    <link rel="stylesheet" href="./css/mainStyle.css" />
+    <link rel="stylesheet" href="/css/contactCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <nav role="navigation">
+          <div id="default-nav">
+            <img class="logo" src="./Logo.png" alt="Logo Location Voiture" />
+            <div class="nav-bar-toggle"></div>
+
+            <ul class="nav">
+              <li><a href="./index.html"> Accueil</a></li>
+              <li><a href="./Gallerie.html"> Gallerie</a></li>
+              <li><a href="./Reservation.html"> Reservation</a></li>
+              <li><a href="./Contact.html"> Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="mobile-nav">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./Gallerie.html">Gallerie</a></li>
+                <li><a href="./Reservation.html">Reservation</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="slogan" style="line-height: 0">
+              <h2 class="auto">RENT ME NOW</h2>
+              <h4 class="location">LOCATION DE VEHICULE</h4>
+            </div>
+            <img
+              class="logo-mobile"
+              src="./logo2.png"
+              alt="voiture logo location "
+            />
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="contact">
+    <img id="bgContact" src="/ContactBg.gif" alt="background gif Rent Me NOW">
+    <div class="titre">
+        <h2 class="h2">Contacter-Nous</h2>
+        <p>Vous pouvez nous rendre visite et communiquer avec nous sur les réseaux sociaux, nous appeler, visiter notre agence. Nous vous accueillons à tout moment.</p>
+    </div>
+    <h3 class="h2"> ENTRER VOS INFORMATION ICI</h3>
+    <div class="container">
+    <div id="formulaire">
+        <form autocomplete="off" class="form-contact form" name="contact_form">
+            <div class="two-in-one-field">
+                <div class="input_group">
+                    <input class="input_form" type="text" name="name" id="Fname"
+                        placeholder="First name" required>
+                    <label class="label_form" for="Fname">Votre Prénom</label>
+                </div>
+                <div class="input_group">
+                    <input class="input_form" type="text" id="Lname" placeholder="Last name" name="Lname" required>
+                    <label class="label_form" for="Lname">Votre Nom</label>
+                </div>
+            </div>
+            <div class="two-in-one-field">
+                <div class="input_group">
+                    <input class="input_form" type="email" id="email" placeholder="Email address" name="email"
+                        required>
+                    <label class="label_form" for="email">Votre Email adress</label>
+                </div>
+                <div class="input_group">
+                    <input class="input_form" type="text" id="phone" pattern="[0-9]{12}" placeholder="Phone Number"
+                        required>
+                    <label class="label_form" for="phone">Votre Numero Telephone</label>
+                </div>
+            </div>
+            <div class="input_group">
+                <textarea class="input_form message" rows="6" cols="" type="text" id="msg" name="message"
+                    placeholder="Message" required></textarea>
+                <label class="label_form" for="message">Votre Message</label>
+            </div>
+            <div class="input_group_button">
+                <button class="voirPlus submit-form" id="submitBtn" style="font-family: 'Cabin',sans seriffe;">Confirmer
+                </button>
+            </div>
+        </form>
+    </div>
+    </div>
+
+    </section>
+    <footer class="footer">
+        <div class="copyright">
+            <p>©2021 Rent Me Now <b> | </b><a href=""> Confidentielité</a></p>
+        </div>
+        <div class="contact-info">
+            <p><b><u>Contact us</u></b></p>
+            <p>Email : RentMeNow@contact.com</p>
+            <p>Telepone : +2126 3430 6060 / +2125 24 61 5050</p>
+        </div>
+        <span>
+            <button class="up" type="button"> <a href="#default-nav">Début de page</a> </button>
+        </span>
+        <div class="icons">
+            <a class="fa-icon" href="https://www.instagram.com/" title="">
+            <i class="fa fa-instagram"></i>
+            </a>
+            <a class="fa-icon" href="https://pinterest.com/" title="">
+            <i class="fa fa-pinterest"></i>
+            </a>
+            <a class="fa-icon" href="https://twitter.com/" title="">
+            <i class="fa fa-twitter"></i>
+            </a>
+            <a class="fa-icon" href="https://facebook.com/" title="">
+            <i class="fa fa-facebook"></i>
+            </a>
+        </div>
+    </footer>
+  <script src="/jsFiles/main.js"></script>
+  </body>
+</html>
